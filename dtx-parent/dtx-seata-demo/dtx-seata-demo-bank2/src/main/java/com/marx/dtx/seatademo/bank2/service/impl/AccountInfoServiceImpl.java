@@ -16,19 +16,19 @@ import org.springframework.transaction.annotation.Transactional;
 @Slf4j
 public class AccountInfoServiceImpl implements AccountInfoService {
 
-    @Autowired
-    AccountInfoDao accountInfoDao;
+	@Autowired
+	AccountInfoDao accountInfoDao;
 
 
-    @Transactional
-    @Override
-    public void updateAccountBalance(String accountNo, Double amount) {
-        log.info("bank2 service begin,XID：{}",RootContext.getXID());
-        //李四增加金额
-        accountInfoDao.updateAccountBalance(accountNo,amount);
-        if(amount==3){
-            //人为制造异常
-            throw new RuntimeException("bank2 make exception..");
-        }
-    }
+	@Transactional
+	@Override
+	public void updateAccountBalance(String accountNo, Double amount) {
+		log.info("bank2 service begin,XID：{}", RootContext.getXID());
+		//李四增加金额
+		accountInfoDao.updateAccountBalance(accountNo, amount);
+		if (amount == 3) {
+			//人为制造异常
+			throw new RuntimeException("bank2 make exception..");
+		}
+	}
 }

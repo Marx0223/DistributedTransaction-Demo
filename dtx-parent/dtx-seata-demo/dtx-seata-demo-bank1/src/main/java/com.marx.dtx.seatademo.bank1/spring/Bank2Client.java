@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @FeignClient(value="seata-demo-bank2",fallback= com.marx.dtx.seatademo.bank1.spring.Bank2ClientFallback.class)
 public interface Bank2Client {
-    //远程调用李四的微服务
+
+    /**
+     * 远程调用李四的微服务
+     */
     @GetMapping("/bank2/transfer")
-    public  String transfer(@RequestParam("amount") Double amount);
+    String transfer(@RequestParam("amount") Double amount);
 }
