@@ -12,6 +12,7 @@
         <module>dtx-seata-demo</module>
         <module>dtx-tcc-hmily-demo</module>
         <module>dtx-txmsg-rocketmq-demo</module>
+        <module>dtx-notifymsg-rocketmq-demo</module>
     </modules>
 
     <properties>
