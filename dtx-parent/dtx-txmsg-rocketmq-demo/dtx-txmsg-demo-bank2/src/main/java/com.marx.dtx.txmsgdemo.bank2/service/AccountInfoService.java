@@ -3,7 +3,7 @@ package com.marx.dtx.txmsgdemo.bank2.service;
 import com.marx.dtx.txmsgdemo.bank2.model.AccountChangeEvent;
 
 /**
- * Created by Administrator.
+ * Created by Marx.
  */
 public interface AccountInfoService {
 

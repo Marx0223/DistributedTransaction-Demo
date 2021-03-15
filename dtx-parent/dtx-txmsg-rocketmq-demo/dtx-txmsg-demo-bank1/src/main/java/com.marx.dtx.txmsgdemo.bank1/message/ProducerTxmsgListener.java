@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * @author Administrator
+ * @author Marx
  * @version 1.0
  **/
 @Component

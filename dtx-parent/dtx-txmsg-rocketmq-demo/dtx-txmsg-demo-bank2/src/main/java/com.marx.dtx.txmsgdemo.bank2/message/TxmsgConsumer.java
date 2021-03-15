@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * @author Administrator
+ * @author Marx
  * @version 1.0
  **/
 @Component
