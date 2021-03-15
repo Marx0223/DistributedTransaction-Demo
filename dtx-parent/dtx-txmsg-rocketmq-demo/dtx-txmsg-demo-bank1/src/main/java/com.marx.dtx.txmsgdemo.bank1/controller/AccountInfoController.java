@@ -22,11 +22,14 @@ public class AccountInfoController {
 
     @GetMapping(value = "/transfer")
     public String transfer(@RequestParam("accountNo")String accountNo, @RequestParam("amount") Double amount){
+
         //创建一个事务id，作为消息内容发到mq
         String tx_no = UUID.randomUUID().toString();
         AccountChangeEvent accountChangeEvent = new AccountChangeEvent(accountNo,amount,tx_no);
+
         //发送消息
         accountInfoService.sendUpdateAccountBalance(accountChangeEvent);
+
         return "转账成功";
     }
 }
