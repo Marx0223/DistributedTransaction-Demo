@@ -56,6 +56,6 @@ logging:
     org.dromara.hmily.lottery: debug
     org.dromara.hmily: debug
     io.netty: info
-    cn.itcast.wanxintx.seatademo.bank2: debug
+    com.marx.wanxintx.seatademo.bank2: debug
 
 
