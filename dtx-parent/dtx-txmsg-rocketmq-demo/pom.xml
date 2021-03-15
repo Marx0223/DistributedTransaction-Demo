@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>dtx-txmsg-rocketmq-demo</artifactId>
-
+    <packaging>pom</packaging>
     <modules>
         <module>dtx-txmsg-demo-bank1</module>
         <module>dtx-txmsg-demo-bank2</module>
